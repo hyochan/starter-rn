@@ -1,0 +1,33 @@
+{
+	"name": "RNProject",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+    "start:packager": "node_modules/react-native/packager/packager.sh",
+    "start:reset": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "jest": "jest",
+    "build:ios": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
+    "build:android": "react-native bundle --entry-file index.android.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest android"		
+	},
+	"dependencies": {
+		"react": "16.0.0-alpha.12",
+		"react-native": "0.46.1",
+		"react-native-extended-stylesheet": "^0.6.0",
+		"react-navigation": "^1.0.0-beta.11",
+		"react-redux": "^5.0.5",
+		"redux": "^3.7.1"
+	},
+	"devDependencies": {
+		"babel-jest": "20.0.3",
+		"babel-preset-react-native": "2.1.0",
+		"jest": "20.0.4",
+		"react-test-renderer": "16.0.0-alpha.12"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
