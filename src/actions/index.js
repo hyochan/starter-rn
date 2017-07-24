@@ -1,6 +1,6 @@
-export function someAction(input) {
+export function updateSearch(input) {
   return {
-    type: 'SOME_ACTION',
+    type: 'UPDATE_SEARCH',
     value: input,
   };
 }

@@ -1,50 +1,29 @@
-'use strict';
-
 import React, { Component } from 'react';
 import {
-  Animated,
-  Platform,
-  StatusBar,
-  StyleSheet,
-  TouchableHighlight,
-  Image,
-  ScrollView,
-  Text,
   View,
 } from 'react-native';
 
+import Navbar from '../../shared/Navbar';
+import SearchView from '../../shared/SearchView';
 import styles from './styles';
 
-export default class Page extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
-
-  goBack() {
-    this.props.navigation.goBack();
+class Page extends Component {
+  handleSearched = () => {
+    this.props.navigation.navigate('Second');
   }
 
   render() {
     return (
-      <View style={styles.container}>
-       <View style={ styles.header }>
-          <TouchableHighlight
-            activeOpacity={ 0.75 }
-            underlayColor="transparent"
-            onPress={ () => this.goBack() }
-          >
-            <Image source={ require('../../../../assets/imgs/close.png') } />
-          </TouchableHighlight>
+      <View style={ styles.container }>
+        <View style={ styles.header }>
+          <Navbar>Let's Travel</Navbar>
         </View>
         <View style={ styles.content }>
-          <ScrollView style={{ alignSelf: 'stretch', }}>
-            <Text style={{ textAlign: 'center', }}>There is no page. Check the router.</Text>
-          </ScrollView>
+          <SearchView handleSearched = { this.handleSearched }/>
         </View>
       </View>
     );
   }
 }
+
+export default Page;

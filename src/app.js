@@ -13,7 +13,6 @@ import {
 import stylesVar from './stylesVar';
 
 import { StackNavigator } from 'react-navigation';
-import TestPage from './components/pages/Test';
 import FirstPage from './components/pages/First';
 import SecondPage from './components/pages/Second';
 
@@ -24,7 +23,8 @@ const store = createStore(
   })
 );
 
-const startPage = 'Test';
+// const startPage = 'First';
+const startPage = 'First';
 
 class App extends Component {
   constructor (props) {
@@ -33,10 +33,6 @@ class App extends Component {
   }
   render () {
     const Navigator = StackNavigator({
-      Test: {
-        screen: TestPage,
-        path: 'test',
-      },
       First: {
         screen: FirstPage,
         path: 'first',
@@ -47,7 +43,7 @@ class App extends Component {
       },
 
     }, {
-      initialRouteName: 'Test',
+      initialRouteName: startPage,
       header: null,
       headerMode: 'none',
       navigationOptions: {

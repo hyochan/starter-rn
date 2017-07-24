@@ -1,22 +1,25 @@
 const initialState = {
-  someAction: false,
+  search: {
+    area: '',
+    people: 1,
+    startDate: null,
+    endDate: null,
+    results: [],
+  },
 };
 
-function someAction(state = initialState.someAction, action) {
+function search(state = initialState.search, action) {
   switch (action.type) {
-    case 'UPDATE_LOGIN_STATE':
-      console.log('action LOGGED_IN : ' + JSON.stringify(action));
-      return {
-        ...state,
-        value: action.value,
-      };
+    case 'UPDATE_SEARCH':
+      console.log('action search : ' + JSON.stringify(action));
+      return action.value;
     default:
       return state;
   }
 }
 
 const myReducers = {
-  someAction,
+  search,
 };
 
 export default myReducers;
