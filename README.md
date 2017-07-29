@@ -15,9 +15,10 @@
 # INSTALL
 1. npm install
 2. npm start
-3. react-native link (needed for star-rating ui) - You can avoid this by npm uninstall react-native-star-rating and related source code.
-4. Open other terminal
-5. npm run ios
+3. Open other terminal
+4. npm run ios
 
 # React-Native version
 1. 0.46.1
+# React version
+1. 16.0.0-alpha.12
