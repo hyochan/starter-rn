@@ -19,7 +19,7 @@
 4. npm run ios
 
 # React-Native version
-1. 0.46.1
+1. 0.47.1
 
 # Preview
 1. First Page (You can search '제주도' or '인천' or '월정리' for now on).
