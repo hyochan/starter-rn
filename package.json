@@ -17,7 +17,7 @@
     "apsl-react-native-button": "^3.0.2",
     "moment": "^2.18.1",
     "react": "16.0.0-alpha.12",
-    "react-native": "0.46.1",
+    "react-native": "0.47.1",
     "react-native-extended-stylesheet": "^0.6.0",
     "react-native-modal-datetime-picker": "^4.8.0",
     "react-native-star-rating": "^1.0.7",
