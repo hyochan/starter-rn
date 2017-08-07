@@ -2,14 +2,14 @@
 # Helpful starter project for react-native
 
 # Directories are well structured
-1. There are sample of redux and action.
+1. There are samples for redux and action.
 2. You can learn how to structure react-native app.
 3. Navigate with React-Navigation's StackNavigator.
-4. Styles.js and seperated from components.
-5. Global variables and functions and in global folder.
+4. Styles.js are seperated from components.
+5. Global variables and functions are in global folder.
 6. Assets are in assets folder.
 7. Global styles are defined in stylesVar.js
-8. If you use rest api call, that is be done in searchApi.js
+8. If you use rest api call, that will be done in searchApi.js
 9. Shared components are in shared folder.
 
 # INSTALL
